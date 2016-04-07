@@ -1,1 +1,3 @@
-test RefsHunter functionality
+Test RefsHunter functionality.
+
+WARNING:  very time and memory demanding test case
