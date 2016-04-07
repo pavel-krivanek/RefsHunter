@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PavelKrivanek 4/7/2016 11:24",
+	"super" : "TestCase",
+	"category" : "RefsHunter-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RefsHunterTest",
+	"type" : "normal"
+}
