@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "PavelKrivanek 4/7/2016 11:41",
+	"super" : "Object",
+	"category" : "RefsHunter-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"objects",
+		"references",
+		"hashDict",
+		"visited"
+	],
+	"name" : "RefsHunter",
+	"type" : "normal"
+}
