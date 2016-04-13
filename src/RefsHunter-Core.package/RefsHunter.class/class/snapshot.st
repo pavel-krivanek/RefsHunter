@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 snapshot
 
-	^ self new.
+	^ self new snapshot.

@@ -4,7 +4,9 @@
 	"category" : "RefsHunter-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Stacks"
+	],
 	"instvars" : [
 		"objects",
 		"references",
