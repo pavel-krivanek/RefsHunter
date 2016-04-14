@@ -9,7 +9,7 @@ countReferences
 
 	objects withIndexDo: [:obj :index |
 		"add object class to references"
-		(references at: (self indexOf: obj class)) add: index.
+		"(references at: (self indexOf: obj class)) add: index."
 		
 		"add object instances"
 		1 to: obj class instSize do: [:i |
