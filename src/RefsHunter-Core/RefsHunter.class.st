@@ -87,7 +87,7 @@ RefsHunter >> countReferences [
 					(ri == 0) ifFalse: [(references at: ri) add: index ]]].
 
 		"include variable elements"
-		((obj class isVariable and: [(obj class == CompiledMethod) not]) and: [ obj class isWeak not ]) ifTrue: [
+		((obj class isVariable and: [(obj class == CompiledMethod) not and: [(obj class == CompiledBlock) not]]) and: [ obj class isWeak not ]) ifTrue: [
 			1 to: obj basicSize do: [:i |
 				ref := obj basicAt: i.
 				((ref class == SmallInteger) 
