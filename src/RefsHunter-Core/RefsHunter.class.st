@@ -197,7 +197,15 @@ RefsHunter >> snapshot [
 ]
 
 { #category : 'accessing' }
-RefsHunter >> wayFrom: obj1 to: obj2 [
+RefsHunter >> wayFrom: anObject [
+
+	^ self 
+		wayFrom: anObject
+		to: Smalltalk specialObjectsArray
+]
+
+{ #category : 'accessing' }
+RefsHunter >> wayFrom: fromObject to: toObject [
 
 	"Find shortest path of backward references from obj1 to obj2.
 	
@@ -208,8 +216,8 @@ RefsHunter >> wayFrom: obj1 to: obj2 [
 
 	| i1 i2 result|
 	
-	i1 := self indexOf: obj1.
-	i2 := self indexOf: obj2.
+	i1 := self indexOf: fromObject.
+	i2 := self indexOf: toObject.
 	
 	self assert: (i1 ~= 0).
 	self assert: (i2 ~= 0).
